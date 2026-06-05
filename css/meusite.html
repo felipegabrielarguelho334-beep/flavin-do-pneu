@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Moderno Básico</title>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* MENU */
+
+header{
+    background: #111;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+ul a:hover{
+    background: red;
+}
+
+/* HERO */
+
+.hero{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* CARDS */
+
+.cards{
+    padding: 60px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h2{
+    margin-bottom: 15px;
+}
+
+.card p{
+    line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            MeuSite
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h1>Site Moderno</h1>
+
+    <p>
+        Um exemplo simples usando HTML e CSS moderno
+        com flexbox, grid, hover e responsividade.
+    </p>
+
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h2>HTML</h2>
+        <p>
+            Estrutura do site usando tags organizadas.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>CSS</h2>
+        <p>
+            Estilização moderna com sombras e efeitos.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Responsivo</h2>
+        <p>
+            Funciona em celular e computador.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 MeuSite
+</footer>
+
+</body>
+</html>

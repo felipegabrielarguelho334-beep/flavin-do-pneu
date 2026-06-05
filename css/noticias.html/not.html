@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Codificação de caracteres da página -->
+  <meta charset="UTF-8" />
+
+  <!-- Faz a página se adaptar ao tamanho da tela do dispositivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título que aparece na aba do navegador -->
+  <title>Portal de Notícias</title>
+
+  <!-- Importa o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════
+       CABEÇALHO DA PÁGINA
+       Barra vermelha com o nome do portal
+  ═══════════════════════════ -->
+  <header>
+    <h1 style="display: none;">Portal de Notícias do antonio valadares</h1>
+  </header>
+
+  <!-- ═══════════════════════════
+       CONTEÚDO PRINCIPAL
+       Onde ficam todas as notícias
+  ═══════════════════════════ -->
+  <main>
+
+    <!-- Lista de notícias -->
+    <ul class="noticias" aria-label="Lista de notícias">
+
+      <!-- ── NOTÍCIA 1 ── -->
+      <li>
+        <!-- O <a> envolve tudo para que o card inteiro seja clicável -->
+        <a class="noticia" href="https://www.technologyreview.com" target="_blank" rel="noopener noreferrer">
+
+          <!-- Imagem em miniatura à esquerda -->
+          <img class="noticia__img" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400&q=80" alt="Inteligência artificial" />
+
+          <!-- Texto da notícia à direita da imagem -->
+          <div class="noticia__corpo">
+
+            <!-- Categoria (ex: Tecnologia, Esportes...) -->
+            <p class="noticia__categoria">tecnologia</p>
+
+            <!-- Título principal da notícia -->
+            <h2 class="noticia__titulo">Ia e zika</h2>
+
+            <!-- Breve resumo da notícia -->
+            <p class="noticia__resumo">IA supera humanos em raciocinio logico</p>
+
+            <!-- Tempo e fonte da notícia -->
+            
+
+          </div>
+        </a>
+      </li>
+
+      <!-- ── NOTÍCIA 2 ── -->
+      <li>
+        <a class="noticia" href="https://valoreconomico.globo.com" target="_blank" rel="noopener noreferrer">
+          <img class="noticia__img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=80" alt="Gráfico econômico" />
+          <div class="noticia__corpo">
+            <p class="noticia__categoria">economia</p>
+            <h2 class="noticia__titulo">IBGE</h2>
+            <p class="noticia__resumo">IBGE mostra dados que impresionam</p>
+            
+          </div>
+        </a>
+      </li>
+
+      <!-- ── NOTÍCIA 3 ── -->
+      <li>
+        <a class="noticia" href="https://science.nasa.gov" target="_blank" rel="noopener noreferrer">
+          <img class="noticia__img" src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&q=80" alt="Saturno" />
+          <div class="noticia__corpo">
+            <p class="noticia__categoria">Ciência</p>
+            <h2 class="noticia__titulo">NASA </h2>
+            <p class="noticia__resumo">origem da vida</p>
+            
+          </div>
+        </a>
+      </li>
+
+      <!-- ── NOTÍCIA 4 ── -->
+      <li>
+        <a class="noticia" href="https://espn.com.br" target="_blank" rel="noopener noreferrer">
+          <img class="noticia__img" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&q=80" alt="Futebol" />
+          <div class="noticia__corpo">
+            <p class="noticia__categoria">Esportes</p>
+            <h2 class="noticia__titulo">Seleção brasileira vence Argentina </h2>
+            <p class="noticia__resumo">nao vamos perder para Argentonos</p>
+            
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </main>
+
+ 
+</body>
+</html>
