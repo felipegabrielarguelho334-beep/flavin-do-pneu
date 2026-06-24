@@ -1,8 +1,3 @@
-
-
-
-
-
 <style>
 :root {
   --verde: #1a6b3a;
@@ -13,20 +8,34 @@
   --fonte: Arial, sans-serif;
 }
 
+
+/*  para celular*/
 /*  para celular*/
 @media (max-width: 600px) {
 
+  .noticia {
+    flex-direction: column;
+    padding: 1rem;
+    gap: .8rem;
+  }
+
   .noticia__img {
-    width: 140px;
-    height: 95px;
+    width: 100%;
+    height: 180px;
+  }
+
+  .noticia__categoria {
+    font-size: .85rem;
   }
 
   .noticia__titulo {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.3;
   }
 
   .noticia__resumo {
-    display: none;
+    display: block;
+    font-size: 1rem;
   }
 }
 
@@ -224,7 +233,7 @@ main {
             <p class="noticia__resumo">IA supera humanos em raciocinio logico</p>
 
             <!-- Tempo e fonte da notícia -->
-            
+
 
           </div>
         </a>
@@ -238,7 +247,7 @@ main {
             <p class="noticia__categoria">economia</p>
             <h2 class="noticia__titulo">IBGE</h2>
             <p class="noticia__resumo">IBGE mostra dados que impresionam</p>
-            
+
           </div>
         </a>
       </li>
@@ -251,7 +260,7 @@ main {
             <p class="noticia__categoria">Ciência</p>
             <h2 class="noticia__titulo">NASA </h2>
             <p class="noticia__resumo">origem da vida</p>
-            
+
           </div>
         </a>
       </li>
@@ -264,7 +273,7 @@ main {
             <p class="noticia__categoria">Esportes</p>
             <h2 class="noticia__titulo">Seleção brasileira vence Argentina </h2>
             <p class="noticia__resumo">nao vamos perder para Argentonos</p>
-            
+
           </div>
         </a>
       </li>
@@ -272,6 +281,6 @@ main {
     </ul>
   </main>
 
- 
+
 </body>
 </html>
